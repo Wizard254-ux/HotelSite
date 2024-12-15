@@ -9,10 +9,20 @@ function Navbar({displaySideBar,isSideBar}) {
 
     const goTo=(page)=>{
         navigate(page)
+        displaySideBar(false)
+
     }
 
   return (
-<nav className="flex flex-row justify-between gap-3 items-center px-5 pt-2 pb-4">
+    <>
+     {/* Overlay */}
+     {isSideBar && (
+        <div 
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" 
+            onClick={() => displaySideBar(false)}
+        />
+    )}
+<nav className="flex flex-row justify-between gap-3 items-center px-5 pt-2 pb-4" onClick={(e)=>e.stopPropagation()}>
     <div className="rounded-full justify-center flex flex-row gap-3 items-center">
         <img 
             className="w-[60px] h-[60px] rounded-full bg-transparent" 
@@ -69,6 +79,8 @@ function Navbar({displaySideBar,isSideBar}) {
         <i className="fa-solid fa-bars text-2xl"></i>
     </button>
 </nav>
+</>
+
 )
 }
 
