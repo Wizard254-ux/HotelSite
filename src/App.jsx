@@ -5,13 +5,13 @@ import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 import Admin from './Pages/Admin'
 import AdminLogin from './Pages/Login'
-
 import { AuthProvider } from './Authentication/AuthProvider'
 import ProtectedRoute from './Authentication/ProtectedRoute'
 import RestaurantBlog from './Pages/Blog'
 import AboutPage from './Pages/AboutUs'
 import ContactPage from './Pages/ContactUs'
 import MyOrders from './Pages/MyOrders'
+import NotFoundPage from './Pages/NotFound'
 function App() {
   const [count, setCount] = useState(0)
   const [isSideBar,displaySideBar]=useState(false)
@@ -35,7 +35,8 @@ function App() {
         <Route path='/AboutUs' element={<AboutPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/ContactUs' element={<ContactPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/MyOrders' element={<MyOrders displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
-        
+        <Route path="*" element={<NotFoundPage />} />
+
       </Routes>
     </AuthProvider>
     </BrowserRouter>
