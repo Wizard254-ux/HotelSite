@@ -91,7 +91,7 @@ const AdminLogin = () => {
                 setErrorMessage('');
               }}
               placeholder="Enter your username"
-              className="w-full px-4 py-3 bg-white border border-white/20 rounded-lg text-white 
+              className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white 
                          placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 
                          transition duration-300"
             />
@@ -111,9 +111,9 @@ const AdminLogin = () => {
                   setErrorMessage('');
                 }}
                 placeholder="Enter your password"
-                className="w-full px-4 py-3 bg-white border border-white/20 rounded-lg text-white 
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white 
                            placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 
-                           transition duration-300 pr-12 "
+                           transition duration-300 pr-12"
               />
               <button 
                 type="button"
@@ -156,7 +156,7 @@ const AdminLogin = () => {
           <i className="fas fa-lock"></i>
           Login
           </button>:
-          <div className="fa-3x flex justify-center items-center self-center">
+          <div className='fa-3x flex justify-center items-center self-center'>
                   <i className="fas fa-circle-notch fa-spin"></i>
              </div>}
 

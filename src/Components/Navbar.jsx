@@ -53,10 +53,10 @@ function Navbar({displaySideBar,isSideBar}) {
 {isClientAuthorized&&
         <li onClick={()=>goTo('/MyOrders')}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 w-full md:bg-yellow-400 hover:bg-gray-400 hover:text-black text-xl rounded-md transition-colors duration-300">      <i className="fas fa-info-circle mr-2"></i> View Orders
 </span></li>}
-<li onClick={()=>goTo('/Admin')}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 md:bg-yellow-400 hover:bg-gray-400 hover:text-black text-xl rounded-md transition-colors duration-300">      <i class="fa-solid fa-user"></i>Admin
+<li onClick={()=>goTo('/Admin')}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 md:bg-yellow-400 hover:bg-gray-400 hover:text-black text-xl rounded-md transition-colors duration-300">      <i class="fa-solid fa-user mr-2"></i>Admin
 </span></li>
 {isClientAuthorized&&
-        <li onClick={logoutClient}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 w-full md:bg-red-400 hover:bg-red-600 hover:text-black text-xl rounded-md transition-colors duration-300">     <i className="fa fa-sign-out" aria-hidden="true"></i> Logout
+        <li onClick={logoutClient}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 w-full md:bg-red-400 hover:bg-red-600 hover:text-black text-xl rounded-md transition-colors duration-300">     <i className="fa fa-sign-out mr-2" aria-hidden="true"></i> Logout
 </span></li>}
 
 </ul>
