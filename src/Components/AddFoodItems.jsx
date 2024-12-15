@@ -161,7 +161,7 @@ const AddFoodItem = ({foodCategories,setFoodCategories}) => {
               onChange={handleInputChange}
               placeholder="Enter food name"
               required
-              className="w-full px-3 py-2 border rounded text-gray-600"
+              className="w-full px-3 py-2 border rounded text-white"
             />
           </div>
           
@@ -174,7 +174,7 @@ const AddFoodItem = ({foodCategories,setFoodCategories}) => {
               onChange={handleInputChange}
               placeholder="Enter price"
               required
-              className="w-full px-3 py-2 border rounded text-gray-600"
+              className="w-full px-3 py-2 border rounded text-white"
             />
           </div>
           
@@ -185,7 +185,7 @@ const AddFoodItem = ({foodCategories,setFoodCategories}) => {
                 value={newCategory}
                 onChange={(e) => setNewCategory(e.target.value)}
                 placeholder="New category name"
-                className="flex-grow px-3 py-2 border rounded text-gray-600"
+                className="flex-grow px-3 py-2 border rounded text-white"
               />
               <button 
                 type="button"
