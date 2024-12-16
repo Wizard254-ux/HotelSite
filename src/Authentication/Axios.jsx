@@ -99,12 +99,40 @@ export const createApiClient = (baseURL, tokenPrefix = 'access', refreshTokenPre
 
   ApiClient.interceptors.response.use(
     (response) => response.data,
-    (error) => Promise.reject(error)
-  );
+    async (error) => {
+      // Check if the error is due to an invalid or expired access token
+      if (
+        error.response &&
+        (error.response.status === 401 || error.response.status === 403) 
+      ) {
+        if(window.location.pathname.startsWith('Admin')){
+           // Clear Admin cookies and redirect to Admin login
+        Cookies.remove('adminAccess');
+        Cookies.remove('adminRefresh');
+        window.location.href = '/AdminLogin'; // Redirect to Admin login page
+        }else{
 
+          Cookies.remove('access');
+          Cookies.remove('refresh');
+          window.location.href = '/Menu'; // Redirect to Menu
+        }
+    
+        }
+        // If it's not a token-related error, reject as usual
+        return Promise.reject(error);
+      }
+  
+    
+  );
+  
   return ApiClient;
 };
+
+
 
 // Usage
 export const AdminApi = createApiClient('https://alpha002.pythonanywhere.com/', 'adminAccess', 'adminRefresh');
 export const ClientApi = createApiClient('https://alpha002.pythonanywhere.com/', 'access', 'refresh');
+
+
+

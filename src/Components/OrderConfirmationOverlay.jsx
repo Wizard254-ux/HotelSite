@@ -5,13 +5,10 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
   const [phoneNumber, setPhoneNumber] = useState('');
   const [isPhoneValid, setIsPhoneValid] = useState(false);
   const [isInitiating,setInitiating]=useState(false)
-  const [tableNo,setTabelNo]=useState('')
   const [location,setLocatiion]=useState('')
       const {Client}=useAuth()
   
-  const tableNumbers=[
-    1,2,3,4,5,6,
-  ]
+ 
 
   // Group cart items by name and count
   const groupedItems = cart.reduce((acc, item) => {
