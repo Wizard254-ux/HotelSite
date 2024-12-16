@@ -44,7 +44,7 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
 
   // Payment initiation handler
   const handlePayment =async () => {
-    if (isPhoneValid&&tableNo!=='') {
+    if (isPhoneValid) {
       setInitiating(true)
       // TODO: Implement actual payment logic
       console.log('grouped items',groupedItems,Client)
