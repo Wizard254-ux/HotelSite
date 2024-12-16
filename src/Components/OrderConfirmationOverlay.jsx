@@ -54,7 +54,7 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
         'totalAmount':parseInt(total),
         'isDeliverd':0,
         'location':location,
-        'tableNo':tableNo,
+        'tableNo':1,
         'isPaid':0,
         'status':'Order Placed',
         'user':Client.userId
@@ -104,21 +104,6 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
 
         {/* Phone Number Input */}
         <div>
-          <span>Enter Table Number</span>
-          <select 
-              name="category"
-              value={tableNo}
-              onChange={(e)=>setTabelNo(e.target.value)}
-              required
-              className="w-full px-3 py-2 border rounded text-gray-600"
-            >
-              <option value="">Select a Table</option>
-              {tableNumbers.map(no => (
-                <option key={no} value={no}>
-                  {no}
-                </option>
-              ))}
-            </select>
 
         </div>
         <div className="mb-4">
@@ -131,7 +116,7 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
             value={phoneNumber}
             onChange={handlePhoneChange}
             placeholder="10 digit phone number"
-            className="w-full p-2 border font-semibold rounded text-black"
+            className="w-full p-2 border font-semibold rounded bg-gray-700 text-white"
             maxLength="10"
           />
           {phoneNumber && !isPhoneValid && (
@@ -145,12 +130,11 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
             Enter Location
           </label>
           <input 
-            type="tel"
             id="location"
             value={location}
             onChange={handleLocationChange}
             placeholder="Enter location"
-            className="w-full p-2 border font-semibold rounded text-black"
+            className="w-full p-2 border font-semibold bg-gray-700 rounded text-white"
           />
 
         </div>
