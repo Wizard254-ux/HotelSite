@@ -152,7 +152,7 @@ const AdminDashboard = () => {
         <div className='flex flex-row justify-between px-4'>
           <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>
       
-          <h1 className='text-3xl font-bold mb-6 text-blue-500'>Welcome Alpha</h1>
+          <h1 className='text-3xl font-bold mb-6 text-blue-500'>Welcome Mugo</h1>
           <span  onClick={handleTone} className='bg-white fixed hover:cursor-pointer text-black h-8 w-9  sm:h-11 sm:w-11 rounded-full right-9 flex justify-center '><i className={`fa-solid ${tone?'fa-play':'fa-pause'} text-black self-center`}></i></span>
         </div>
         

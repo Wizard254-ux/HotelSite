@@ -83,7 +83,7 @@ const AboutPage = ({displaySideBar,isSideBar}) => {
                 alt="Restaurant Manager" 
                 className="rounded-full w-48 h-48 mx-auto mb-4 object-cover"
               />
-              <h3 className="text-xl font-semibold text-gray-800">Alpha </h3>
+              <h3 className="text-xl font-semibold text-gray-800">Mugo </h3>
               <p className="text-gray-600">General Manager</p>
             </div>
             <div className="text-center">

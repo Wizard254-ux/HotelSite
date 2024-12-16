@@ -15,7 +15,6 @@ function Navbar({displaySideBar,isSideBar}) {
 
   return (
     <>
-     {/* Overlay */}
      {isSideBar && (
         <div 
             className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" 
@@ -30,7 +29,7 @@ function Navbar({displaySideBar,isSideBar}) {
             alt="" 
         />
 
-    <h1 className="text-3xl  font-bold tracking-wide">Alpha Bakehouse
+    <h1 className="text-3xl  font-bold tracking-wide">Mugomarbles bakery
     </h1>
     </div> 
 
