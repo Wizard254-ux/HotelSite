@@ -145,7 +145,7 @@ const OrderConfirmationOverlay = ({ cart, total, onClose,setCart,setTotal }) => 
           disabled={!isPhoneValid}
           style={{fontSize:17}}
           className={`w-full py-3  rounded-lg ${
-            isPhoneValid && tableNo!==''
+            isPhoneValid
               ? 'bg-green-500 hover:bg-green-600 text-white' 
               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
           }`}
