@@ -85,7 +85,7 @@ const AdminDashboard = () => {
     const fetchOrders = async () => {
       try {
         const response = await AdminApi.get('add/Order/');
-        
+        console.log(response)
         // Set order data
         setData(response);
 
