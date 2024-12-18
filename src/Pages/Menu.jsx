@@ -31,7 +31,7 @@ const QuantityModal = ({ item, onClose, onAddToCart }) => {
           value={quantity}
           onChange={handleQuantityChange}
           min="1"
-          className="w-full p-2 border rounded mb-4 text-center text-black"
+          className="w-full p-2 border rounded mb-4 text-center text-white bg-gray-600"
           placeholder="Enter quantity"
         />
         <div className="flex justify-between">
