@@ -56,7 +56,7 @@ const ContactPage = ({displaySideBar,isSideBar}) => {
             
             <div className="flex items-center text-slate-700">
               <Mail className="mr-3 text-blue-600" />
-              <span className='text-slate-600'>mugo@gmail.com</span>
+              <span className='text-slate-600'>mugomarblesbakery@gmail.com</span>
             </div>
             
             <div className="flex items-center text-slate-500">
