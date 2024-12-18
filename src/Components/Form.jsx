@@ -139,7 +139,7 @@ const AuthForm = ({handleCloseOverlay,setIsOrderConfirming,showOverlay,setShowOv
               name="username"
               value={formData.username}
               onChange={handleChange}
-              className="w-full px-3 py-2 text-white font-serif font-medium border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-white font-serif bg-gray-600 font-medium border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -156,7 +156,7 @@ const AuthForm = ({handleCloseOverlay,setIsOrderConfirming,showOverlay,setShowOv
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border text-white font-serif font-medium  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border text-white font-serif font-medium  bg-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
@@ -173,7 +173,7 @@ const AuthForm = ({handleCloseOverlay,setIsOrderConfirming,showOverlay,setShowOv
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border text-white font-serif font-medium  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border text-white font-serif font-medium  bg-gray-600  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
