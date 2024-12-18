@@ -4,7 +4,7 @@ import { useAuth } from '../Authentication/AuthProvider'
 
 function Navbar({displaySideBar,isSideBar}) {
     const navigate=useNavigate()
-        const {isClientAuthorized,logoutClient}=useAuth()
+        const {isClientAuthorized,logoutClient,Client}=useAuth()
     
 
     const goTo=(page)=>{
@@ -64,6 +64,14 @@ function Navbar({displaySideBar,isSideBar}) {
 </span></li>}
 <li onClick={()=>goTo('/Admin')}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 md:bg-yellow-400 hover:bg-gray-400 hover:text-black text-xl rounded-md transition-colors duration-300">      <i class="fa-solid fa-user mr-3"></i>Admin
 </span></li>
+{isClientAuthorized && Client.isStaff === true && (
+    <li onClick={() => goTo('/kitchen')}>
+        <span className="md:buttons hover:cursor-pointer block py-3 px-4 md:bg-yellow-400 hover:bg-gray-400 hover:text-black text-xl rounded-md transition-colors duration-300">
+            <i className="fa-solid fa-kitchen-set mr-2"></i>
+            Kitchen
+        </span>
+    </li>
+)}
 {isClientAuthorized&&
         <li onClick={logoutClient}><span  className="md:buttons hover:cursor-pointer block py-3 px-4 w-full md:bg-red-400 hover:bg-red-600 hover:text-black text-xl rounded-md transition-colors duration-300">     <i className="fa fa-sign-out mr-2" aria-hidden="true"></i> Logout
 </span></li>}

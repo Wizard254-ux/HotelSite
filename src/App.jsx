@@ -12,6 +12,7 @@ import AboutPage from './Pages/AboutUs'
 import ContactPage from './Pages/ContactUs'
 import MyOrders from './Pages/MyOrders'
 import NotFoundPage from './Pages/NotFound'
+import Kitchen from './Pages/Kitchen'
 function App() {
   const [count, setCount] = useState(0)
   const [isSideBar,displaySideBar]=useState(false)
@@ -35,6 +36,7 @@ function App() {
         <Route path='/AboutUs' element={<AboutPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/ContactUs' element={<ContactPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/MyOrders' element={<MyOrders displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
+        <Route path='/Kitchen' element={<Kitchen displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path="*" element={<NotFoundPage />} />
 
       </Routes>
