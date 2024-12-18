@@ -51,25 +51,25 @@ const ContactPage = ({displaySideBar,isSideBar}) => {
           <div className="space-y-4">
             <div className="flex items-center">
               <Phone className="mr-3 text-blue-600" />
-              <span className='text-slate-600'> +254113765336</span>
+              <span className='text-slate-600'> 0795179552</span>
             </div>
             
             <div className="flex items-center text-slate-700">
               <Mail className="mr-3 text-blue-600" />
-              <span className='text-slate-600'>info@Mugomarblesbakerye.com</span>
+              <span className='text-slate-600'>mugo@gmail.com</span>
             </div>
             
             <div className="flex items-center text-slate-500">
               <MapPin className="mr-3 text-blue-600" />
-              <span>  Machakos Town,Machakos </span>
+              <span>  Baricho ,kirinyaga</span>
             </div>
             
             <div className="flex items-center">
               <Clock className="mr-3 text-blue-600" />
               <div className='text-slate-600'>
-                <p>Mon-Thu: 6am - 11pm</p>
-                <p>Fri-Sat: 6am - 11pm</p>
-                <p>Sun: 6pm - 11pm</p>
+                <p>Mon-Thu: 6am - 6pm</p>
+                <p>Fri-Sat: 6am - 6pm</p>
+                <p>Sun: 7am - 6pm</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const ContactPage = ({displaySideBar,isSideBar}) => {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full p-2 border rounded text-black"
-                placeholder="(123) 456-7890"
+                placeholder="0795179552"
               />
             </div>
             
