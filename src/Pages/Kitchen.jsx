@@ -88,9 +88,9 @@ function Kitchen({ isSideBar, displaySideBar }) {
                 <tr className="bg-gray-200 ">
                   <th className="border p-2 text-black">Food Name</th>
                   <th className="border p-2 text-black">Total Quantity</th>
-                  <th className="border p-2 text-black">Location</th>
-                  <th className="border p-2 text-black">Paid Status</th>
-                  <th className="border p-2 text-black">Order Status</th>
+                  {/* <th className="border p-2 text-black">Location</th> */}
+                  {/* <th className="border p-2 text-black">Paid Status</th> */}
+                  {/* <th className="border p-2 text-black">Order Status</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -98,16 +98,16 @@ function Kitchen({ isSideBar, displaySideBar }) {
                   <tr key={foodName} className="hover:bg-gray-600">
                     <td className="border p-2">{foodName}</td>
                     <td className="border p-2">{foodData.totalQuantity}</td>
-                    <td className="border p-2">{foodData.location}</td>
-                    <td className="border p-2">
+                    {/* <td className="border p-2">{foodData.location}</td> */}
+                    {/* <td className="border p-2">
                       <span className={`
                         ${foodData.isPaid ? 'text-green-600' : 'text-red-600'}
                         font-semibold
                       `}>
                         {foodData.isPaid ? 'Paid' : 'Unpaid'}
                       </span>
-                    </td>
-                    <td className="border p-2">{foodData.status}</td>
+                    </td> */}
+                    {/* <td className="border p-2">{foodData.status}</td> */}
                   </tr>
                 ))}
               </tbody>
