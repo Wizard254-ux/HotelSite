@@ -25,7 +25,7 @@ function Navbar({displaySideBar,isSideBar}) {
     <div className="rounded-full justify-center flex flex-row gap-3 items-center">
         <img 
             className="w-[60px] h-[60px] rounded-full bg-transparent" 
-            src="https://image.similarpng.com/very-thumbnail/2021/07/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png" 
+            src="mugoMarblesLogo.jpeg" 
             alt="" 
         />
 
