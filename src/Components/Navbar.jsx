@@ -29,7 +29,7 @@ function Navbar({displaySideBar,isSideBar}) {
             alt="" 
         />
 
-    <h1 className="text-3xl  font-bold tracking-wide">Mugomarbles bakery
+    <h1 className="text-lg md:text-3xl  font-bold tracking-wide">Mugomarbles bakery
     </h1>
     </div> 
 
