@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
     <AuthProvider>
       <Routes>
-        <Route path='/'  element={<Home isSideBar={isSideBar} displaySideBar={displaySideBar}/>}/>
+        {/* <Route path='/'  element={<Home isSideBar={isSideBar} displaySideBar={displaySideBar}/>}/>
         <Route path='/Menu' element={<Menu displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path="/Admin" element={
                             <ProtectedRoute>
@@ -36,7 +36,7 @@ function App() {
         <Route path='/AboutUs' element={<AboutPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/ContactUs' element={<ContactPage displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
         <Route path='/MyOrders' element={<MyOrders displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
-        <Route path='/Kitchen' element={<Kitchen displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/>
+        <Route path='/Kitchen' element={<Kitchen displaySideBar={displaySideBar} isSideBar={isSideBar}/>}/> */}
         <Route path="*" element={<NotFoundPage />} />
 
       </Routes>

@@ -13,16 +13,16 @@ const NotFoundPage = () => {
         </h1>
         <p className="text-gray-600 mb-8">
           The page you're looking for seems to have taken an unexpected detour. 
-          Don't worry, we'll help you find your way back.
+          {/* Don't worry, we'll help you find your way back. */}
         </p>
         <div className="flex justify-center space-x-4">
-          <a 
+          {/* <a 
             href="/" 
             className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
           >
             <Home className="mr-2" size={20} />
             Home
-          </a>
+          </a> */}
           <button 
             onClick={() => window.location.reload()}
             className="flex items-center bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition duration-300"
